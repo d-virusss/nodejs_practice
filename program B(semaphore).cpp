@@ -7,14 +7,14 @@ int count;
 DWORD WINAPI IncrCount(LPVOID IpParam)
 {
     int k;
-    for (k = 0; k < 500000; k++)
+    for (k = 0; k < 10000; k++)
         count++;
     return 0; // thread 종료
 }
 DWORD WINAPI DecrCount(LPVOID IpParam)
 {
     int k;
-    for (k = 0; k < 500000; k++)
+    for (k = 0; k < 10000; k++)
         count--;
     return 0; // thread 종료
 }
